@@ -1,0 +1,303 @@
+
+<html lang="en">
+<head>
+<title>Gaia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<script src="validation.js">
+
+</script>
+
+
+</head>
+
+
+<body onload="carousel();">
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+		document.getElementById("header2").style.display = "block";
+		document.getElementById("Menu2").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+		document.getElementById("header2").style.display = "none";
+		document.getElementById("Menu2").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+
+</script>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div id="Admin">
+
+
+</div>
+
+
+<div id="header2">
+<a href="GaiaHomepage.html">
+<div id="logo2">
+
+
+</div>
+
+</a>
+<div id="Menu2">
+
+<a href="GaiaHomepage.html">Home</a>
+<a href="Contactus.html">Contact Us</a>
+<a href="Aboutus.html">About us</a>
+<a id="subs" href="#feed" onclick="open1();">SUBSCRIBE</a>
+
+</div>
+
+
+
+</div>
+
+
+<div id="header">
+<a href="GaiaHomepage.html">
+<div id="logo">
+
+
+</div>
+</a>
+<div id="Menu">
+
+<a href="GaiaHomepage.html">Home</a>
+<a href="Contactus.html">Contact Us</a>
+<a href="Aboutus.html">About us</a>
+<a id='subs1' href="#feed" onclick="open1();">SUBSCRIBE</a>
+
+</div>
+
+
+
+</div>
+
+<div id="SlideShow">
+<div class="w3-content w3-display-container" style="max-width:100%;overflow: hidden;height:100%;">
+  <img class="mySlides" src="Image1.1.jpg" style="width:100%;">
+  <img class="mySlides" src="image2.jpg" style="width:100%">
+  <img class="mySlides" src="Image3.jpg" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+</div>
+
+
+
+<div id="info">
+<div class="w3-row-padding w3-margin-top">
+  <div class="w3-third">
+    <div class="w3-card">
+     <div class="container">
+	 <a href ="products.html">
+  <img src="SUB!.jpg" alt="Avatar" class="image"  style="width:100%"></a>
+   <div class="center">Organic Products</div>
+  <div class="middle">
+    <div class="text">Organic Products</div>
+  </div>
+</div>   
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card">
+       <div class="container">
+	   <a href ="Fram.html">
+  <img src="Sub23.jpg" alt="Avatar" class="image" style="width:100%"></a>
+  <div class="center">Framers</div>
+  <div class="middle">
+    <div class="text">Framers</div> 
+  </div>
+</div>
+    </div>
+  </div>
+  
+ 
+  
+
+  <div class="w3-third">
+    <div class="w3-card">
+        <div class="container">
+		 <a href ="whyorganic.html">
+  <img src="Sub32.jpg" alt="Avatar" class="image" style="width:100%"></a>
+   <div class="center">why organic ?</div>
+   
+  <div class="middle">
+    <div class="text">why organic ?</div>
+  </div>
+</div>
+    </div>
+  </div>
+  
+  
+</div>
+
+
+
+</div>
+
+<div id="buy">
+
+
+
+</div>
+
+<div id="feed">
+
+<table style="color:white; width:100%; text-align:center;">
+
+<tr>
+<br>
+<th>InFormation</th>
+
+<th>SUBSCRIBE TO NEWSLETTER</th>
+
+<th>GET CONNECTED</th>
+</tr>
+
+<tr>
+
+<td>
+<pre>
+    online marketplace of organic products.
+    From fresh organic produce to dry 
+	groceries, get everything delivered 
+	right to your doorstep!
+</pre>
+</td>
+
+
+<td>
+<pre>
+
+<input id="name" onblur="Name();" type="text" placeholder="Full Name">
+<span id="nameMess"></span>
+<input id="email" onblur="mail();" type="text" placeholder="Email Address">
+<span id="emailMess"></span>
+<input id="Number"  onblur="num();" type="text" placeholder="Contact Number">
+<span id="numMess"></span>
+<input id="Btn" onclick="subMess();" type="Submit" Value="SUBSCRIBE">
+<span id="Sub"></span>
+<pre>
+</td>
+
+
+<td>
+
+       <a href="https://www.w3schools.com">
+<img src="fb1.png" alt="Go to W3Schools!" width="42" height="42" border="0">
+</a> 
+
+       <a href="https://www.w3schools.com">
+<img src="Google+.png" alt="Go to W3Schools!" width="42" height="42" border="0">
+</a>
+
+      <a href="https://www.w3schools.com">
+<img src="insta.png" alt="Go to W3Schools!" width="42" height="42" border="0">
+</a>
+
+      <a href="https://www.w3schools.com">
+<img src="twitter.png" alt="Go to W3Schools!" width="42" height="42" border="0">
+</a>
+
+</td>
+
+</tr>
+
+</table>
+<hr>
+<pre Style="font-size: 16px; background-color:black;">
+                                                               Copy right by Gaia 2018	
+																	   
+</pre>
+
+</div>
+
+
+<div id="mob">
+
+<div id="expan" onclick="open1();">More Details</div>
+
+<div id ="mobInfo">
+<pre>
+               <b>InFormation</b>
+      online marketplace of organic products.
+      From fresh organic produce to dry 
+	  groceries, get everything delivered 
+	  right to your doorstep!
+</pre>
+<hr>
+</div>
+<div id="mobcontact">
+<pre>
+            <b>SUBSCRIBE TO NEWSLETTER</b>
+         <input id="name" onblur="Name();" size="27" type="text" placeholder="Full Name">
+         <span id="nameMess"></span>
+         <input id="email" onblur="mail();" size="27" type="text" placeholder="Email Address">
+         <span id="emailMess"></span>
+         <input id="Number"  onblur="num();" size="27" type="text" placeholder="Contact Number">
+         <span id="numMess"></span>
+         <input id="Btn" onclick="subMess();" type="Submit" Value="SUBSCRIBE"style="width:56%;" >
+        <span id="Sub"></span>
+</pre>
+<hr>
+</div>
+<div id="mobconn">
+     <b>GET CONNECTED</b>
+       <a href="https://www.Facebook.com">
+<img src="fb1.png" alt="Go to W3Schools!" width="42" height="42"style="border:0;" >
+</a> 
+       <a href="https://www.Google.com">
+<img src="Google+.png" alt="Go to W3Schools!" width="42" height="42"style="border:0;" >
+</a>     <a href="https://www.Instagram.com">
+<img src="insta.png" alt="Go to W3Schools!" width="42" height="42"style="border:0;">
+</a>    <a href="https://www.twitter.com">
+<img src="twitter.png" alt="Go to W3Schools!" width="42" height="42"style="border:0;" >
+</a>
+<pre Style="font-size: 16px; background-color:black;">
+              
+	 Copy right by Gaia 2018
+			  
+																	   
+</pre>
+<hr>
+</div>
+
+
+
+</div>
+
+
+
+
+</body>
+
+
+
+
+</html>

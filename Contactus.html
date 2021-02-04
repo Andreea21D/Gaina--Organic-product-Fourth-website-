@@ -1,0 +1,372 @@
+<html>
+
+
+<head>
+
+<link rel="stylesheet" href="Style.css"><!---------DESIGN------->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<script src="validation.js">
+
+</script>
+
+
+</head>
+
+
+<body onload="carousel();">
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+		document.getElementById("header2").style.display = "block";
+		document.getElementById("Menu2").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+		document.getElementById("header2").style.display = "none";
+		document.getElementById("Menu2").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+
+</script>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div id="Admin">
+
+
+</div>
+
+
+<div id="header2">
+
+<div id="logo2">
+<a href="GaiaHomepage.html">
+</a>
+</div>
+
+
+<div id="Menu2">
+
+<a href="GaiaHomepage.html">Home</a>
+<a href="Contactus.html">Contact Us</a>
+<a href="Aboutus.html">About us</a>
+<a id='subs' onclick="open1();" href="#feed">SUBSCRIBE</a>
+
+</div>
+
+
+
+</div>
+
+
+<div id="header">
+<a href="GaiaHomepage.html">
+<div id="logo">
+
+
+</div>
+</a>
+<div id="Menu">
+
+<a href="GaiaHomepage.html">Home</a>
+<a href="Contactus.html">Contact Us</a>
+<a href="Aboutus.html">About us</a>
+<a id='subs' onclick="open1();" href="#feed">SUBSCRIBE</a>
+
+</div>
+
+
+
+</div>
+
+<div id="SlideShow" style="Background-color:#f4f4f4 ;height:80%;">
+
+<div id="Icon">
+
+</div>
+
+<div id="Text" Style="position:absolute;   top:45%; left: 23%" >
+
+<pre  style="font-size: 25px;">
+  <b>                   
+ Feel free to contact us at your convenience and 
+    we’ll be happy to get in touch with you.</b>
+
+</pre>
+
+</div>
+
+
+</div>
+
+
+<div id="info" style="Background-color:white; height: 100%">
+
+<div id="Text" Style="position:absolute;   top:10%; left: 10%" >
+
+<pre  style="font-size: 25px;">
+<b>Let’s create work together!</b> <pre style="font-size: 16px; color:gray;" >
+Are you a producer planning to sell on Organic Jiyo? 
+Please get in touch with us.
+</pre>
+ </pre>
+
+
+</div>
+
+
+<div id="Contact" Style="position:absolute;   top:10%; left: 50%" >
+
+<pre>
+
+<input id="name1" onblur="Name1();" size="45" type="text" placeholder="Full Name">
+<span id="nameMess"></span>
+<input id="email1" onblur="mail1();" size="45" type="text" placeholder="Email Address">
+<span id="email1Mess"></span>
+<input id="subject"  onblur="Subject();" size="45" type="text" placeholder="Subject">
+<span id="subMess"></span>
+<textarea type="text" id="message" rows="7" cols="44"  placeholder="Type Your Message Here" onblur="mess();"></textarea>
+<span id="textMess"></span>
+<input id="Btn" onclick="subMess1();" type="Submit" Value="SEND">
+<span id="Sub1"></span>
+<pre>
+
+
+</div>
+
+
+
+
+</div>
+
+<div id="buy" Style="Background-color:#f4f4f4 ; height:50%; Background-Image:url("");">
+
+
+<table style="color:Black; width:100%; text-align:center;">
+
+<tr>
+<br>
+<br>
+<br>
+<br>
+<th>InFormation</th>
+
+<th>Come visit us</th>
+
+<th>Give Us A Call</th>
+</tr>
+
+<tr>
+
+<td>
+<pre>
+
+
+  hello@organicGaia.com
+ www.organicGaia.com
+</pre>
+</td>
+
+
+<td>
+<pre>
+
+
+Street x, London, England
+<pre>
+</td>
+
+
+<td>
+<pre>
+
+Online Sales –
+ (321) ORGANIC
+Shipping & Returns –
+ orders@organicjiyo.com
+</pre>
+</td>
+
+
+
+
+</tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+</div>
+
+<div id="map">
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1243.0022589833518!2d-0.24435978561286353!3d51.458073484706254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760ee6c0c242eb%3A0x3a5665ce81752bbf!2sUniversity+of+Roehampton+London!5e0!3m2!1sen!2s!4v1523311365706" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+</div>
+
+<div id="feed">
+
+<table style="color:white; width:100%; text-align:center;">
+
+<tr>
+<br>
+<th>InFormation</th>
+
+<th>SUBSCRIBE TO NEWSLETTER</th>
+
+<th>GET CONNECTED</th>
+</tr>
+
+<tr>
+
+<td>
+<pre>
+    online marketplace of organic products.
+    From fresh organic produce to dry 
+	groceries, get everything delivered 
+	right to your doorstep!
+</pre>
+</td>
+
+
+<td>
+<pre>
+
+<input id="name" onblur="Name();" type="text" placeholder="Full Name">
+<span id="nameMess"></span>
+<input id="email" onblur="mail();" type="text" placeholder="Email Address">
+<span id="emailMess"></span>
+<input id="Number"  onblur="num();" type="text" placeholder="Contact Number">
+<span id="numMess"></span>
+<input id="Btn" onclick="subMess();" type="Submit" Value="SUBSCRIBE">
+<span id="Sub"></span>
+<pre>
+</td>
+
+
+<td>
+
+       <a href="https://www.w3schools.com">
+<img src="fb1.png" alt="Go to W3Schools!" width="42" height="42" border="0">
+</a> 
+
+       <a href="https://www.w3schools.com">
+<img src="Google+.png" alt="Go to W3Schools!" width="42" height="42" border="0">
+</a>
+
+      <a href="https://www.w3schools.com">
+<img src="insta.png" alt="Go to W3Schools!" width="42" height="42" border="0">
+</a>
+
+      <a href="https://www.w3schools.com">
+<img src="twitter.png" alt="Go to W3Schools!" width="42" height="42" border="0">
+</a>
+
+</td>
+
+
+
+
+</tr>
+
+</table>
+<hr>
+<pre>
+                                                                       Copy right by Gaia 2018 
+</pre>
+
+</div>
+
+
+<div id="mob">
+
+<div id="expan" onclick="open1();">More Details</div>
+
+
+<div id ="mobInfo" >
+
+<pre>
+               <b>InFormation</b>
+      online marketplace of organic products.
+      From fresh organic produce to dry 
+	  groceries, get everything delivered 
+	  right to your doorstep!
+</pre>
+<hr>
+</div>
+
+
+<div id ="mobcontact" >
+<pre>
+           <b>SUBSCRIBE TO NEWSLETTER</b>
+         <input id="name" onblur="Name();" size="27" type="text" placeholder="Full Name">
+         <span id="nameMess"></span>
+         <input id="email" onblur="mail();" size="27" type="text" placeholder="Email Address">
+         <span id="emailMess"></span>
+         <input id="Number"  onblur="num();" size="27" type="text" placeholder="Contact Number">
+         <span id="numMess"></span>
+         <input id="Btn" onclick="subMess();" type="Submit" Value="SUBSCRIBE">
+        <span id="Sub"></span>
+</pre>
+<hr>
+</div>
+
+<div id ="mobconn" >
+
+     <b>GET CONNECTED</b>
+
+       <a href="https://www.w3schools.com">
+<img src="fb1.png" alt="Go to W3Schools!" width="42" height="42" border="0">
+</a> 
+
+       <a href="https://www.w3schools.com">
+<img src="Google+.png" alt="Go to W3Schools!" width="42" height="42" border="0">
+</a>
+
+      <a href="https://www.w3schools.com">
+<img src="insta.png" alt="Go to W3Schools!" width="42" height="42" border="0">
+</a>
+
+      <a href="https://www.w3schools.com">
+<img src="twitter.png" alt="Go to W3Schools!" width="42" height="42" border="0">
+</a>
+
+
+<pre Style="font-size: 16px; background-color:black;">
+               Copy right by Gaia 2018	
+																	   
+</pre>
+
+
+</div>
+
+
+</div>
+
+
+
+</body>
+
+
+
+
+</html>
